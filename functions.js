@@ -24,7 +24,9 @@ console.log(increase(5));
  * @param {number} n
  * @return {number}
  */
-
+function decrease (num) {
+	return num-1;
+}
 
 /**
  * Adds two numbers.
@@ -32,6 +34,9 @@ console.log(increase(5));
  * @param {number} y
  * @return {number} the sum
  */
+ function add (a,b) {
+ 	return a+b;
+ }
 
 
 /**
