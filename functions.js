@@ -65,7 +65,9 @@ function multiply (a,b) {
  * @param {number} y
  * @return {number} the quotient
  */
-
+function divide (a,b) {
+	return a/b;
+}
 
 /**
  * Multiplies a number by itself.
