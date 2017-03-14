@@ -14,10 +14,10 @@ console.log(numberToString(5));
  * @param {number} n
  * @return {number}
  */
- function increment (num) {
+ function increase (num) {
  	return num+1;
  }
-console.log(increment(5));
+console.log(increase(5));
 
 /**
  * Subtracts one from a given number.
