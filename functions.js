@@ -92,7 +92,7 @@ function calculate (op,x,y){
 	return result;
 }
 
-calculate (" subtract ",4,7);
+calculate ("add",4,7);
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -203,7 +203,7 @@ function isOdd (num) {
  * @return {string} the score represented as a letter grade
  */
 function letterGrade (score, max) {
-	if (score / max >= .9) {
+	if (score / max >= 0.9) {
 		return 'A';
 	
 	} 
@@ -230,6 +230,19 @@ console.log(letterGrade(88,100));
  * @return {object} restaurant
  */
 
+var restaurant = {
+	reviews: 2
+};
+
+function incrementReviews (obj) {
+	if (obj.reviews >0){
+		obj.reviews ++;
+	} else {
+		obj.reviews = 1;
+	}
+	return obj;
+}
+console.log(incrementReviews(restaurant));
 
 /**
  * Joins two strings with a space.
