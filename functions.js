@@ -107,7 +107,7 @@ function isGreaterThan (x,y) {
 		return false;
 	}
 }
-console.log(isGreaterThan (5,4));
+
 
 /**
  * Returns true if `a` is less than `b`.
@@ -115,7 +115,13 @@ console.log(isGreaterThan (5,4));
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-
+function isLessThan (x,y) {
+	if (x < y ) {
+		return true;
+	} else {
+		return false;
+	}
+}
 
 /**
  * Returns true if `a` and `b` are equal.
