@@ -222,13 +222,13 @@ function letterGrade (score, max) {
 		return 'A';
 	
 	} 
-	else if (score / max >= .8 ){
+	else if (score / max >= 0.8 ){
 		return 'B';
 	}
-	else if (score / max >= .7) {
+	else if (score / max >= 0.7) {
 		return 'C';
 	}
-	else if (score / max >= .6 ) {
+	else if (score / max >= 0.6 ) {
 		return 'D';
 	} else {
 		return 'F';
@@ -265,7 +265,9 @@ console.log(incrementReviews(restaurant));
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
-
+function combine (word1, word2) {
+	return word1 + ' ' + word2;
+}
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
@@ -275,3 +277,11 @@ console.log(incrementReviews(restaurant));
  * @return {object} circle
  */
 
+function createCircle (radius) {
+	var circle = {};
+	circle.circumference = Math.PI*radius*2;
+	circle.area = Math.PI*radius*radius;
+	return circle;
+}
+
+console.log(createCircle(10));
