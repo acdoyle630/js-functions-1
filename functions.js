@@ -55,7 +55,9 @@ function subtract (a,b) {
  * @param {number} y
  * @return {number} the product
  */
-
+function multiply (a,b) {
+	return a*b;
+}
 
 /**
  * Divides the first number by the second.
