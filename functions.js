@@ -86,7 +86,13 @@ function square (num) {
  * @param {number} y
  * @return {number} the result
  */
+function calculate (op,x,y){
+	result = x - y;
+	console.log(x +  " - "  + y + " = " + result);
+	return result;
+}
 
+calculate (" subtract ",4,7);
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -94,7 +100,14 @@ function square (num) {
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
-
+function isGreaterThan (x,y) {
+	if (x > y) {
+		return true;
+	} else {
+		return false;
+	}
+}
+console.log(isGreaterThan (5,4));
 
 /**
  * Returns true if `a` is less than `b`.
