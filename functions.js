@@ -87,12 +87,27 @@ function square (num) {
  * @return {number} the result
  */
 function calculate (op,x,y){
-	result = x - y;
-	console.log(x +  " - "  + y + " = " + result);
+	var result = 0;
+	if (op === 'add') {
+		result = x + y;
+		console.log (x + " + " + y + " = " + result);
+	}
+	if (op === 'subtract') {
+		result = x - y;
+		console.log(x + " - " + y + " = " + result);
+	}
+	if (op === 'multiply') {
+		result = x * y;
+		console.log (x + ' * ' + y + " = " + result);
+	}
+	if (op === 'divide') {
+		result = x / y;
+		console.log(x + ' / ' + y + ' = ' + result);
+	}
 	return result;
 }
 
-calculate ("add",4,7);
+calculate ("multiply",4,7);
 
 /**
  * Returns true if `a` is greater than `b`.
