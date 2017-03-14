@@ -74,7 +74,9 @@ function divide (a,b) {
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
+function square (num) {
+	return num*num;
+}
 
 /**
  * Performs a mathematical operation on two numbers.
