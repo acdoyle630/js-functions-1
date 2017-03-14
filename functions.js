@@ -45,7 +45,9 @@ function decrease (num) {
  * @param {number} y
  * @return {number} the difference
  */
-
+function subtract (a,b) {
+	return a-b;
+}
 
 /**
  * Multiplies two numbers.
