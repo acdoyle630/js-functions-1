@@ -4,13 +4,20 @@
  * @return {string} the number as a string
  */
 
+function numberToString (n){
+	return n.toString();
+}
+console.log(numberToString(5));
 
 /**
  * Adds one to a given number.
  * @param {number} n
  * @return {number}
  */
-
+ function increment (num) {
+ 	return num+1;
+ }
+console.log(increment(5));
 
 /**
  * Subtracts one from a given number.
